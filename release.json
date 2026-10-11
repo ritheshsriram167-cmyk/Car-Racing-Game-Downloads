@@ -1,20 +1,24 @@
 {
-  "version": "0.5.0",
-  "version_code": 500,
+  "version": "0.7.0",
+  "version_code": 700,
   "protocol": 4,
   "channel": "preview",
   "manifest_url": "https://ritheshsriram167-cmyk.github.io/Car-Racing-Game-Downloads/release.json",
-  "minimum_version_code": 500,
+  "minimum_version_code": 700,
   "service_url": "https://clicks-accordance-contribute-epinions.trycloudflare.com",
   "endpoint": "wss://clicks-accordance-contribute-epinions.trycloudflare.com/ws",
   "download_url": "https://ritheshsriram167-cmyk.github.io/Car-Racing-Game-Downloads/",
   "availability": "Temporary development service; host PC must remain running.",
   "service_discovery_url": "https://ritheshsriram167-cmyk.github.io/Car-Racing-Game-Downloads/service.json",
   "release_notes": [
-    "Native Android and Windows builds with shared authoritative multiplayer.",
-    "Android mesh chunks, texture budgets and High / Medium / Low graphics.",
-    "Safe-area multitouch, adjustable opacity, automatic gas and controlled drift presets.",
-    "Asynchronous online status, version checks, and offline single-player."
+    "Compact MANUAL GAS / AUTO GAS button in the driving HUD; acceleration choice also appears under Controls.",
+    "Auto gas uses an adjustable 140 km/h cruise target. Braking pauses it until GAS is pressed again; menus and focus loss also pause it.",
+    "Brakes immediately override accelerator and boost. Forward braking stops the car instead of automatically engaging reverse.",
+    "Full steering button travel, faster progressive steering on Android and Windows, and optional automatic corner-speed assistance.",
+    "One drift tap makes a short controlled slide, restores rear grip and countersteers during recovery; holding DRIFT does not continuously lock the rear wheels.",
+    "Camera-frustum visibility for streamed mobile scenery, with off-screen detail loading reduced, coarse fallbacks and permanent road collisions.",
+    "All streamed scene buffers, texture references and UVs audited; mobile Low/Medium/High and all lighting presets rendered without texture or shader errors.",
+    "Shared revised handling is advertised by the multiplayer server. Older hosts retain matching legacy prediction; revised hosts require version 0.7.0."
   ],
   "limitations": [
     "Real-phone installation, Android + Android and Android + Windows tests remain unverified.",
@@ -22,18 +26,18 @@
   ],
   "artifacts": {
     "android": {
-      "file": "Car-Racing-Game-Android-v0.5.0.apk",
-      "bytes": 148156002,
-      "sha256": "ad33046095bfb3f4d239c79ef9675f163705ea66f042270f9463a6eaaaf3170b",
-      "url": "https://github.com/ritheshsriram167-cmyk/Car-Racing-Game-Downloads/releases/download/v0.5.0/Car-Racing-Game-Android-v0.5.0.apk"
+      "file": "Car-Racing-Game-Android-v0.7.0.apk",
+      "bytes": 169375476,
+      "sha256": "85a2bbde574777edbd7171ffa6ac8427982014e80a58f0de4bd7a08261abe215",
+      "url": "https://github.com/ritheshsriram167-cmyk/Car-Racing-Game-Downloads/releases/download/v0.7.0/Car-Racing-Game-Android-v0.7.0.apk"
     },
     "windows": {
-      "file": "Car-Racing-Game-Windows-v0.5.0.zip",
-      "bytes": 231103504,
-      "sha256": "35198ed10adff1ab1194790cf8eac6c0709c57c58aba629d45b082eaa523590a",
-      "url": "https://github.com/ritheshsriram167-cmyk/Car-Racing-Game-Downloads/releases/download/v0.5.0/Car-Racing-Game-Windows-v0.5.0.zip"
+      "file": "Car-Racing-Game-Windows-v0.7.0.zip",
+      "bytes": 231132474,
+      "sha256": "6f8ea42292e2a491308a0d8f5e073ec7198390bd1f838ffcd9814cc43941eeb1",
+      "url": "https://github.com/ritheshsriram167-cmyk/Car-Racing-Game-Downloads/releases/download/v0.7.0/Car-Racing-Game-Windows-v0.7.0.zip"
     }
   },
   "android_certificate_sha256": "6ae0f8fff23ca87020ae617d256eb8791110905f03f4be9f82d147eaeaefd7ab",
-  "source_commit": "00eb8ec0b05c54ef0a1e2d9fae20081c7ec16d5e"
+  "source_commit": "5c275579753131238a43bc9a9f20c163290f6674"
 }

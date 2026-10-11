@@ -2,6 +2,6 @@
   "service_url": "https://clicks-accordance-contribute-epinions.trycloudflare.com",
   "endpoint": "wss://clicks-accordance-contribute-epinions.trycloudflare.com/ws",
   "protocol": 4,
-  "minimum_version_code": 500,
+  "minimum_version_code": 700,
   "availability": "Temporary development service; host PC must remain running."
 }

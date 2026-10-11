@@ -1,2 +1,2 @@
-ad33046095bfb3f4d239c79ef9675f163705ea66f042270f9463a6eaaaf3170b  Car-Racing-Game-Android-v0.5.0.apk
-35198ed10adff1ab1194790cf8eac6c0709c57c58aba629d45b082eaa523590a  Car-Racing-Game-Windows-v0.5.0.zip
+85a2bbde574777edbd7171ffa6ac8427982014e80a58f0de4bd7a08261abe215  Car-Racing-Game-Android-v0.7.0.apk
+6f8ea42292e2a491308a0d8f5e073ec7198390bd1f838ffcd9814cc43941eeb1  Car-Racing-Game-Windows-v0.7.0.zip
