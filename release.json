@@ -1,0 +1,39 @@
+{
+  "version": "0.5.0",
+  "version_code": 500,
+  "protocol": 4,
+  "channel": "preview",
+  "manifest_url": "https://ritheshsriram167-cmyk.github.io/Car-Racing-Game-Downloads/release.json",
+  "minimum_version_code": 500,
+  "service_url": "https://clicks-accordance-contribute-epinions.trycloudflare.com",
+  "endpoint": "wss://clicks-accordance-contribute-epinions.trycloudflare.com/ws",
+  "download_url": "https://ritheshsriram167-cmyk.github.io/Car-Racing-Game-Downloads/",
+  "availability": "Temporary development service; host PC must remain running.",
+  "service_discovery_url": "https://ritheshsriram167-cmyk.github.io/Car-Racing-Game-Downloads/service.json",
+  "release_notes": [
+    "Native Android and Windows builds with shared authoritative multiplayer.",
+    "Android mesh chunks, texture budgets and High / Medium / Low graphics.",
+    "Safe-area multitouch, adjustable opacity, automatic gas and controlled drift presets.",
+    "Asynchronous online status, version checks, and offline single-player."
+  ],
+  "limitations": [
+    "Real-phone installation, Android + Android and Android + Windows tests remain unverified.",
+    "Multiplayer currently needs the host PC running. The temporary server hostname can change; the game checks this website for its current endpoint."
+  ],
+  "artifacts": {
+    "android": {
+      "file": "Car-Racing-Game-Android-v0.5.0.apk",
+      "bytes": 148156002,
+      "sha256": "ad33046095bfb3f4d239c79ef9675f163705ea66f042270f9463a6eaaaf3170b",
+      "url": "https://github.com/ritheshsriram167-cmyk/Car-Racing-Game-Downloads/releases/download/v0.5.0/Car-Racing-Game-Android-v0.5.0.apk"
+    },
+    "windows": {
+      "file": "Car-Racing-Game-Windows-v0.5.0.zip",
+      "bytes": 231103504,
+      "sha256": "35198ed10adff1ab1194790cf8eac6c0709c57c58aba629d45b082eaa523590a",
+      "url": "https://github.com/ritheshsriram167-cmyk/Car-Racing-Game-Downloads/releases/download/v0.5.0/Car-Racing-Game-Windows-v0.5.0.zip"
+    }
+  },
+  "android_certificate_sha256": "6ae0f8fff23ca87020ae617d256eb8791110905f03f4be9f82d147eaeaefd7ab",
+  "source_commit": "00eb8ec0b05c54ef0a1e2d9fae20081c7ec16d5e"
+}
