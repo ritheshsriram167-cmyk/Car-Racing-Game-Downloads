@@ -15,6 +15,6 @@ async function release(){
   }
   list('notes',data.release_notes||[]);list('limitations',data.limitations||[]);
   el('service').textContent=data.availability||'The multiplayer service has separate hosting.';
-  try{const discovery=await fetch('service.json',{cache:'no-store'});const service=discovery.ok?await discovery.json():data;const status=await fetch(service.service_url+'/health',{signal:AbortSignal.timeout(7000)});if(status.ok){const info=await status.json();el('service').textContent=`Service online · ${info.online} players · ${info.racing||0} racing · ${info.waiting||0} waiting`;}}catch{}
+  try{const discovery=await fetch('service.json',{cache:'no-store'});const service=discovery.ok?await discovery.json():data;if(!service.service_url)throw Error('No public server configured');const status=await fetch(service.service_url+'/health',{signal:AbortSignal.timeout(7000)});if(!status.ok)throw Error('Server offline');const info=await status.json();el('service').textContent=`Service online · ${info.online} players · ${info.racing||0} racing · ${info.waiting||0} waiting`;}catch{el('service').textContent='Public multiplayer server offline / not configured. Offline races remain available.';}
 }
 release().catch(error=>{el('version').textContent=error.message;});

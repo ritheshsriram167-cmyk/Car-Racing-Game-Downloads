@@ -1,7 +1,7 @@
 {
-  "service_url": "https://clicks-accordance-contribute-epinions.trycloudflare.com",
-  "endpoint": "wss://clicks-accordance-contribute-epinions.trycloudflare.com/ws",
+  "service_url": "",
+  "endpoint": "",
   "protocol": 4,
   "minimum_version_code": 800,
-  "availability": "Temporary development service; host PC must remain running."
+  "availability": "Production server is not configured. Offline racing is available."
 }

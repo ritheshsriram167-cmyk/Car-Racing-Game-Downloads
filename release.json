@@ -1,45 +1,52 @@
 {
-  "version": "0.8.0",
-  "version_code": 800,
+  "version": "0.10.0",
+  "version_code": 1000,
   "protocol": 4,
   "channel": "preview",
   "manifest_url": "https://ritheshsriram167-cmyk.github.io/Car-Racing-Game-Downloads/release.json",
   "minimum_version_code": 800,
-  "service_url": "https://clicks-accordance-contribute-epinions.trycloudflare.com",
-  "endpoint": "wss://clicks-accordance-contribute-epinions.trycloudflare.com/ws",
+  "service_url": "",
+  "endpoint": "",
   "download_url": "https://ritheshsriram167-cmyk.github.io/Car-Racing-Game-Downloads/",
-  "availability": "Temporary development service; host PC must remain running.",
+  "availability": "Production server is not configured. Offline racing is available.",
   "service_discovery_url": "https://ritheshsriram167-cmyk.github.io/Car-Racing-Game-Downloads/service.json",
+  "signed_manifest_url": "https://ritheshsriram167-cmyk.github.io/Car-Racing-Game-Downloads/release.signed.json",
+  "signed_service_discovery_url": "https://ritheshsriram167-cmyk.github.io/Car-Racing-Game-Downloads/service.signed.json",
+  "content_manifest_url": "https://ritheshsriram167-cmyk.github.io/Car-Racing-Game-Downloads/content.signed.json",
   "release_notes": [
-    "Responsive mechanical steering and balanced front tire grip on all four cars, with safe speed-sensitive steering limits.",
-    "Live 0\u2013100% steering sensitivity, default 50%, with separate keyboard, gamepad, mobile and virtual-wheel profiles; saved response, centering and deadzone settings.",
-    "Optional vector racing steering wheel with continuous multi-touch input, adjustable size, opacity, placement, rotation and centering.",
-    "Compact BACK / R control brakes forward motion, waits near standstill, then reverses. Releasing it removes reverse throttle; GAS safely returns to forward gear.",
-    "Manual accelerator and automatic gears by default. Full GAS uses the same engine and gearbox on desktop and mobile at 120 Hz physics.",
-    "Hold GAS + steering + DRIFT for controlled oversteer. Easy, Normal and Expert assistance provide progressive grip loss and recovery; Expert needs active countersteering. Optional one-tap recovery remains available.",
-    "Tire contact smoke and pooled skid marks, corrected remote wheel-spin interpolation and replicated road-surface normals.",
-    "Smooth chase and drift camera rotation, preserved original cars, track textures and camera-frustum mobile scenery optimizations.",
-    "Authoritative multiplayer handling revision 3 requires version 0.8.0; legacy host handling remains negotiated. Preview clients can now receive newer preview update notifications.",
-    "Development preview: real Android installation, resume, gameplay FPS and phone/Windows cross-play remain unverified until a physical phone is available."
+    "Mobile rendering repairs: one bounded render target, no transient MSAA allocation, no singular unused skid instances, and Android GPU binary-cache reuse disabled.",
+    "A safe Low / 30 FPS Android profile is adopted once without clearing player progress, controls or audio preferences. Medium/High remain available with graphics recovery and timed confirmation.",
+    "Expanded native fullscreen aspect, safe-area menus, brighter glass pedals and a detailed virtual steering wheel. Original cars, maps, shaders and shared 120 Hz steering/braking/drift physics are retained.",
+    "Real-stage startup/race loading, bounded mobile car caching, permanent collision shapes with discarded hidden source meshes, and camera-frustum scenery culling.",
+    "RSA-signed release and server manifests, separate Production/Development/Custom server selection, bounded retry and clear offline/DNS/TLS errors.",
+    "Signed, SHA-256 verified, data-only image content updates activate at menus, preserve previous verified content, reject scripts, and clean obsolete cache files safely.",
+    "Android and Windows update notices show version, notes and download size; installation uses the normal Android installer or a new Windows folder.",
+    "Local development gateway multiplayer and security/graphics regression tests are executed; public multiplayer hosting is not configured.",
+    "Development preview: final physical Android testing is unavailable. Medium/High device rendering and phone/Windows crossplay are not certified."
   ],
   "limitations": [
-    "Real-phone installation, Android + Android and Android + Windows tests remain unverified.",
-    "Multiplayer currently needs the host PC running. The temporary server hostname can change; the game checks this website for its current endpoint."
+    "Physical Android installation testing remains incomplete.",
+    "Android background/resume testing remains incomplete.",
+    "Physical Android + Windows multiplayer testing remains incomplete.",
+    "Physical Android Low/Medium/High graphics qualification remains incomplete.",
+    "Final Android Low/Medium/High rendering, touch, lifecycle and phone/Windows cross-play remain unverified; the earlier POCO evidence is from a different candidate.",
+    "Public multiplayer is not configured. The isolated development server is available locally; public tunnel launch was blocked by automatic approval review.",
+    "Automatic content updates currently support allowlisted images. New map geometry, audio and application code use complete APK/Windows packages."
   ],
   "artifacts": {
     "android": {
-      "file": "Car-Racing-Game-Android-v0.8.0.apk",
-      "bytes": 169387931,
-      "sha256": "43f0ea9fff558f4ffb64b94695b3c3d4cc6414038db9e6b479514d37fdd10b08",
-      "url": "https://github.com/ritheshsriram167-cmyk/Car-Racing-Game-Downloads/releases/download/v0.8.0/Car-Racing-Game-Android-v0.8.0.apk"
+      "file": "Car-Racing-Game-Android-v0.10.0.apk",
+      "bytes": 169602786,
+      "sha256": "7bdd3ae34ed75c2232897bb5a3189d34435b7986ade7f402f10f12b828c5b96b",
+      "url": "https://github.com/ritheshsriram167-cmyk/Car-Racing-Game-Downloads/releases/download/v0.10.0/Car-Racing-Game-Android-v0.10.0.apk"
     },
     "windows": {
-      "file": "Car-Racing-Game-Windows-v0.8.0.zip",
-      "bytes": 231146758,
-      "sha256": "24fbd2cd8e5c33015b46b8dbfa0a26ea703932fd5d756b95650cbc0d074bd656",
-      "url": "https://github.com/ritheshsriram167-cmyk/Car-Racing-Game-Downloads/releases/download/v0.8.0/Car-Racing-Game-Windows-v0.8.0.zip"
+      "file": "Car-Racing-Game-Windows-v0.10.0.zip",
+      "bytes": 231349284,
+      "sha256": "8676cd1bab710979f85eb124358a23f919f99a93d37fbb4fb657f5d415bbbc48",
+      "url": "https://github.com/ritheshsriram167-cmyk/Car-Racing-Game-Downloads/releases/download/v0.10.0/Car-Racing-Game-Windows-v0.10.0.zip"
     }
   },
-  "android_certificate_sha256": "6ae0f8fff23ca87020ae617d256eb8791110905f03f4be9f82d147eaeaefd7ab",
-  "source_commit": "2c8d8fdc7bb97bb2f5f7d4c01db4496b0694fc5b"
+  "source_commit": "c200380e76d54b0d592ec4341eebee4b9c5e83cd",
+  "android_certificate_sha256": "6ae0f8fff23ca87020ae617d256eb8791110905f03f4be9f82d147eaeaefd7ab"
 }

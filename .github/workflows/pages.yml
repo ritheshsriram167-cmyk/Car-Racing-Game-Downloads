@@ -23,7 +23,7 @@ jobs:
       - name: Stage website without repository metadata
         run: |
           mkdir "$RUNNER_TEMP/site"
-          for name in index.html download.js style.css icon.svg racing.png release.json service.json SHA256SUMS.txt THIRD_PARTY.md .nojekyll; do
+          for name in index.html download.js style.css icon.svg racing.png release.json release.signed.json service.json service.signed.json content.signed.json SHA256SUMS.txt THIRD_PARTY.md .nojekyll; do
             if [ -f "$name" ]; then cp "$name" "$RUNNER_TEMP/site/"; fi
           done
       - uses: actions/upload-pages-artifact@fc324d3547104276b827a68afc52ff2a11cc49c9 # v5.0.0
