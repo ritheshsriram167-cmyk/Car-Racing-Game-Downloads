@@ -1,6 +1,6 @@
 {
-  "version": "0.11.1",
-  "version_code": 1101,
+  "version": "0.12.0",
+  "version_code": 1200,
   "protocol": 4,
   "channel": "preview",
   "manifest_url": "https://ritheshsriram167-cmyk.github.io/Car-Racing-Game-Downloads/release.json",
@@ -14,12 +14,12 @@
   "signed_service_discovery_url": "https://ritheshsriram167-cmyk.github.io/Car-Racing-Game-Downloads/service.signed.json",
   "content_manifest_url": "https://ritheshsriram167-cmyk.github.io/Car-Racing-Game-Downloads/content.signed.json",
   "release_notes": [
-    "Free Touch responds to a stationary press. The same held steering finger can move through the neutral center and steer the opposite way without lifting.",
-    "Existing Android steering modes migrate once to Free Touch so old wheel or joystick settings no longer require a drag to start steering. Optional modes selected after this repair stay saved; pedals, car selection, key bindings, audio and progress are preserved.",
-    "Mobile side barriers and catch fences restore the original track positions, atlas UVs, normals, tangents and triangle winding in both detailed and distant sections. Authored transparency preserves overlapping fence layers; mipmapped fence atlases filter the fine grid at a distance.",
-    "Other mobile track geometry, original desktop assets, collision geometry, shared vehicle physics and protocol 4 are unchanged. Camera-frustum and per-mesh visibility culling remain active.",
-    "Press/hold/swipe, multitouch, saved-mode migration, source-fence integrity and existing game/network regression checks validate this repair. Native Windows captures exercise mobile assets; they do not establish Android performance.",
-    "Development preview: exact phone installation, rendering, FPS, touch, resume and phone/Windows crossplay remain unverified. Public multiplayer is still not provisioned."
+    "Controls: new default DRAG TO STEER. Touching or holding alone never selects a steering angle; slide left/right from touchdown, slide back to straighten, lift to center.",
+    "Controls: proportional travel, touch-jitter threshold and vertical-swipe rejection. One steering finger keeps ownership while separate fingers operate gas, brake and drift.",
+    "Controls: mouse click-drag in the mobile layout, touch-emulated mouse deduplication, cancellation/focus/pause cleanup and one-time migration preserving player settings.",
+    "Bug fix: deferred menu layouts no longer retain freed panels during fast transitions or pause/exit.",
+    "Map: loaded scenery follows small camera turns every rendered frame, fixing stale-frustum edge pop-in; detail loading retains its existing 250 ms budget and source fence mapping remains intact.",
+    "Graphics and physics: original native desktop assets, shared handling and protocol 4 are preserved. Physical Android graphics, FPS and human controls remain unverified."
   ],
   "limitations": [
     "Physical Android installation testing remains incomplete.",
@@ -33,18 +33,18 @@
   ],
   "artifacts": {
     "android": {
-      "file": "Car-Racing-Game-Android-v0.11.1.apk",
-      "bytes": 187700129,
-      "sha256": "7880c33562019d9dd7bb7abd63550b80127ce40ec33a92f3f964a721b5294075",
-      "url": "https://github.com/ritheshsriram167-cmyk/Car-Racing-Game-Downloads/releases/download/v0.11.1/Car-Racing-Game-Android-v0.11.1.apk"
+      "file": "Car-Racing-Game-Android-v0.12.0.apk",
+      "bytes": 187704225,
+      "sha256": "7172e4acb7d41c9a3c243d43e315359e5583236e4cff139198081918c3c17d0b",
+      "url": "https://github.com/ritheshsriram167-cmyk/Car-Racing-Game-Downloads/releases/download/v0.12.0/Car-Racing-Game-Android-v0.12.0.apk"
     },
     "windows": {
-      "file": "Car-Racing-Game-Windows-v0.11.1.zip",
-      "bytes": 231363332,
-      "sha256": "7da449f421abe9f45443b06c63d2c21a3424580412f74bcf73189cffd92c9f8d",
-      "url": "https://github.com/ritheshsriram167-cmyk/Car-Racing-Game-Downloads/releases/download/v0.11.1/Car-Racing-Game-Windows-v0.11.1.zip"
+      "file": "Car-Racing-Game-Windows-v0.12.0.zip",
+      "bytes": 231366231,
+      "sha256": "310d434e140b07fbf599326bf61e0494c1fca5c3336d78de94a6f22240a8ba57",
+      "url": "https://github.com/ritheshsriram167-cmyk/Car-Racing-Game-Downloads/releases/download/v0.12.0/Car-Racing-Game-Windows-v0.12.0.zip"
     }
   },
   "android_certificate_sha256": "6ae0f8fff23ca87020ae617d256eb8791110905f03f4be9f82d147eaeaefd7ab",
-  "source_commit": "29be150809f98f6e7be5c76c5b35cbcd4013f232"
+  "source_commit": "c07796e9bb9c77bfa63fafa1fd2d1c8a9a3b673c"
 }
