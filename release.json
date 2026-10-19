@@ -1,6 +1,6 @@
 {
-  "version": "0.12.0",
-  "version_code": 1200,
+  "version": "0.13.0",
+  "version_code": 1300,
   "protocol": 4,
   "channel": "preview",
   "manifest_url": "https://ritheshsriram167-cmyk.github.io/Car-Racing-Game-Downloads/release.json",
@@ -14,12 +14,12 @@
   "signed_service_discovery_url": "https://ritheshsriram167-cmyk.github.io/Car-Racing-Game-Downloads/service.signed.json",
   "content_manifest_url": "https://ritheshsriram167-cmyk.github.io/Car-Racing-Game-Downloads/content.signed.json",
   "release_notes": [
-    "Controls: new default DRAG TO STEER. Touching or holding alone never selects a steering angle; slide left/right from touchdown, slide back to straighten, lift to center.",
-    "Controls: proportional travel, touch-jitter threshold and vertical-swipe rejection. One steering finger keeps ownership while separate fingers operate gas, brake and drift.",
-    "Controls: mouse click-drag in the mobile layout, touch-emulated mouse deduplication, cancellation/focus/pause cleanup and one-time migration preserving player settings.",
-    "Bug fix: deferred menu layouts no longer retain freed panels during fast transitions or pause/exit.",
-    "Map: loaded scenery follows small camera turns every rendered frame, fixing stale-frustum edge pop-in; detail loading retains its existing 250 ms budget and source fence mapping remains intact.",
-    "Graphics and physics: original native desktop assets, shared handling and protocol 4 are preserved. Physical Android graphics, FPS and human controls remain unverified."
+    "Controls: new default SLIDE STEERING BOX. Touch the invisible square around the left wheel without turning; slide left/right to steer, hold the angle and lift to straighten.",
+    "Steering fix: reversing your finger changes steering direction without returning through the original touchdown. Long overshoots no longer trap the previous direction.",
+    "Steering fix: unused right-side touches cannot take steering ownership. Small deliberate drags survive filtering, and a neutral steering finger overrides conflicting external input.",
+    "Controls: independent pedals and drift, mouse drag with lost-release recovery, safe-area and placement cleanup, and one-time migration preserving saved settings.",
+    "Validation: square/corner/multitouch/cancellation checks, actual chassis direction tests, native Windows driving and isolated authoritative multiplayer checks. Existing fence mapping and camera visibility regressions remain enabled.",
+    "Preview limitation: physical Android controls, Low/Medium/High graphics, FPS, lifecycle and phone/Windows cross-play remain unverified. Public multiplayer hosting remains unconfigured."
   ],
   "limitations": [
     "Physical Android installation testing remains incomplete.",
@@ -33,18 +33,18 @@
   ],
   "artifacts": {
     "android": {
-      "file": "Car-Racing-Game-Android-v0.12.0.apk",
+      "file": "Car-Racing-Game-Android-v0.13.0.apk",
       "bytes": 187704225,
-      "sha256": "7172e4acb7d41c9a3c243d43e315359e5583236e4cff139198081918c3c17d0b",
-      "url": "https://github.com/ritheshsriram167-cmyk/Car-Racing-Game-Downloads/releases/download/v0.12.0/Car-Racing-Game-Android-v0.12.0.apk"
+      "sha256": "e82668b27598912614d812a403b750be62d8038283bc80dbe92de86d8d2065c5",
+      "url": "https://github.com/ritheshsriram167-cmyk/Car-Racing-Game-Downloads/releases/download/v0.13.0/Car-Racing-Game-Android-v0.13.0.apk"
     },
     "windows": {
-      "file": "Car-Racing-Game-Windows-v0.12.0.zip",
-      "bytes": 231366231,
-      "sha256": "310d434e140b07fbf599326bf61e0494c1fca5c3336d78de94a6f22240a8ba57",
-      "url": "https://github.com/ritheshsriram167-cmyk/Car-Racing-Game-Downloads/releases/download/v0.12.0/Car-Racing-Game-Windows-v0.12.0.zip"
+      "file": "Car-Racing-Game-Windows-v0.13.0.zip",
+      "bytes": 231367402,
+      "sha256": "7fb0ccb2d66dd6887a6dadac6a9ff5fdb730d219d06b69d8953351f4c107a148",
+      "url": "https://github.com/ritheshsriram167-cmyk/Car-Racing-Game-Downloads/releases/download/v0.13.0/Car-Racing-Game-Windows-v0.13.0.zip"
     }
   },
   "android_certificate_sha256": "6ae0f8fff23ca87020ae617d256eb8791110905f03f4be9f82d147eaeaefd7ab",
-  "source_commit": "c07796e9bb9c77bfa63fafa1fd2d1c8a9a3b673c"
+  "source_commit": "d53a23bf0130f30fb9211dbed4dfbe41ce6aed6b"
 }
