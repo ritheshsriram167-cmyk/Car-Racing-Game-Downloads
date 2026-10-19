@@ -1,6 +1,6 @@
 {
-  "version": "0.13.0",
-  "version_code": 1300,
+  "version": "0.14.0",
+  "version_code": 1400,
   "protocol": 4,
   "channel": "preview",
   "manifest_url": "https://ritheshsriram167-cmyk.github.io/Car-Racing-Game-Downloads/release.json",
@@ -14,12 +14,12 @@
   "signed_service_discovery_url": "https://ritheshsriram167-cmyk.github.io/Car-Racing-Game-Downloads/service.signed.json",
   "content_manifest_url": "https://ritheshsriram167-cmyk.github.io/Car-Racing-Game-Downloads/content.signed.json",
   "release_notes": [
-    "Controls: new default SLIDE STEERING BOX. Touch the invisible square around the left wheel without turning; slide left/right to steer, hold the angle and lift to straighten.",
-    "Steering fix: reversing your finger changes steering direction without returning through the original touchdown. Long overshoots no longer trap the previous direction.",
-    "Steering fix: unused right-side touches cannot take steering ownership. Small deliberate drags survive filtering, and a neutral steering finger overrides conflicting external input.",
-    "Controls: independent pedals and drift, mouse drag with lost-release recovery, safe-area and placement cleanup, and one-time migration preserving saved settings.",
-    "Validation: square/corner/multitouch/cancellation checks, actual chassis direction tests, native Windows driving and isolated authoritative multiplayer checks. Existing fence mapping and camera visibility regressions remain enabled.",
-    "Preview limitation: physical Android controls, Low/Medium/High graphics, FPS, lifecycle and phone/Windows cross-play remain unverified. Public multiplayer hosting remains unconfigured."
+    "Mobile map: restored missing and collapsed concrete wall faces in both streamed LODs. Three wall atlas materials now retain all 123,524 original triangles, UVs, normals and tangents per LOD.",
+    "PC graphics: fences, walls, signs and buildings keep their authored textures, PBR and transparency. The procedural ground shader no longer replaces every map material or converts translucent scenery into hard cutouts.",
+    "Texture verification: all 98 PC atlases match the source; all 971 mobile material/atlas bindings, 104 streamed textures and both protected wall LODs pass validation.",
+    "Rendering checks: 96 day/night Low/Medium/High map captures, packaged Windows map and driving checks, and resource loading of all 200 actual exported Android map scenes.",
+    "Preserved: original PC assets, restored source fences, shared collision/vehicle physics, steering controls, saved settings and protocol 4.",
+    "Preview limitation: physical Android rendering, FPS, touch, resume and phone/Windows cross-play remain unverified. Windows rendering of mobile assets does not qualify an Android GPU. Public multiplayer hosting remains unconfigured."
   ],
   "limitations": [
     "Physical Android installation testing remains incomplete.",
@@ -33,18 +33,18 @@
   ],
   "artifacts": {
     "android": {
-      "file": "Car-Racing-Game-Android-v0.13.0.apk",
-      "bytes": 187704225,
-      "sha256": "e82668b27598912614d812a403b750be62d8038283bc80dbe92de86d8d2065c5",
-      "url": "https://github.com/ritheshsriram167-cmyk/Car-Racing-Game-Downloads/releases/download/v0.13.0/Car-Racing-Game-Android-v0.13.0.apk"
+      "file": "Car-Racing-Game-Android-v0.14.0.apk",
+      "bytes": 198161835,
+      "sha256": "3d20325a37cb325da2b0531cbb4bce22b7613174a5a1a15947161c8a120d70a2",
+      "url": "https://github.com/ritheshsriram167-cmyk/Car-Racing-Game-Downloads/releases/download/v0.14.0/Car-Racing-Game-Android-v0.14.0.apk"
     },
     "windows": {
-      "file": "Car-Racing-Game-Windows-v0.13.0.zip",
-      "bytes": 231367402,
-      "sha256": "7fb0ccb2d66dd6887a6dadac6a9ff5fdb730d219d06b69d8953351f4c107a148",
-      "url": "https://github.com/ritheshsriram167-cmyk/Car-Racing-Game-Downloads/releases/download/v0.13.0/Car-Racing-Game-Windows-v0.13.0.zip"
+      "file": "Car-Racing-Game-Windows-v0.14.0.zip",
+      "bytes": 231368893,
+      "sha256": "fd2a417453a30ff298f2490b8b51a0aec9498bea212b8010d93fa33d37da3c20",
+      "url": "https://github.com/ritheshsriram167-cmyk/Car-Racing-Game-Downloads/releases/download/v0.14.0/Car-Racing-Game-Windows-v0.14.0.zip"
     }
   },
   "android_certificate_sha256": "6ae0f8fff23ca87020ae617d256eb8791110905f03f4be9f82d147eaeaefd7ab",
-  "source_commit": "d53a23bf0130f30fb9211dbed4dfbe41ce6aed6b"
+  "source_commit": "261a8a668d59c937d2b1b613fe7ebe29825fdc96"
 }
